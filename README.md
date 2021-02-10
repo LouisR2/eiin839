@@ -1,3 +1,1 @@
-# Service oriented computing/WS
-
-## Student : Louis Raffin
+# Service oriented computing/WS - Louis Raffin
