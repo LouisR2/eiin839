@@ -108,6 +108,8 @@ namespace BasicServerHTTPlistener
                 if (request.Url.Segments.Length > 1 &&
                     request.Url.Segments[request.Url.Segments.Length - 1] == "MyMethod" &&
                     HttpUtility.ParseQueryString(request.Url.Query).Get("param1") != "" &&
+                    HttpUtility.ParseQueryString(request.Url.Query).Get("param1") != null &&
+                    HttpUtility.ParseQueryString(request.Url.Query).Get("param2") != null &&
                     HttpUtility.ParseQueryString(request.Url.Query).Get("param2") != "") {
 
                     Mymethods mymethods = new Mymethods();
