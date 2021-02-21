@@ -1,0 +1,6 @@
+C:\Users\louis\Desktop\Cours\S8\SOC\eiin839\TD2\WebDynamic\Question7\bin\Debug\BasicWebServer.exe.config
+C:\Users\louis\Desktop\Cours\S8\SOC\eiin839\TD2\WebDynamic\Question7\bin\Debug\BasicWebServer.exe
+C:\Users\louis\Desktop\Cours\S8\SOC\eiin839\TD2\WebDynamic\Question7\bin\Debug\BasicWebServer.pdb
+C:\Users\louis\Desktop\Cours\S8\SOC\eiin839\TD2\WebDynamic\Question7\obj\Debug\Question7.csprojAssemblyReference.cache
+C:\Users\louis\Desktop\Cours\S8\SOC\eiin839\TD2\WebDynamic\Question7\obj\Debug\BasicWebServer.exe
+C:\Users\louis\Desktop\Cours\S8\SOC\eiin839\TD2\WebDynamic\Question7\obj\Debug\BasicWebServer.pdb
