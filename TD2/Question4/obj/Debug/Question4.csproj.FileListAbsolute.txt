@@ -1,0 +1,5 @@
+C:\Users\louis\Desktop\Cours\S8\SOC\eiin839\TD2\Question4\bin\Debug\BasicWebServer.exe.config
+C:\Users\louis\Desktop\Cours\S8\SOC\eiin839\TD2\Question4\bin\Debug\BasicWebServer.exe
+C:\Users\louis\Desktop\Cours\S8\SOC\eiin839\TD2\Question4\bin\Debug\BasicWebServer.pdb
+C:\Users\louis\Desktop\Cours\S8\SOC\eiin839\TD2\Question4\obj\Debug\BasicWebServer.exe
+C:\Users\louis\Desktop\Cours\S8\SOC\eiin839\TD2\Question4\obj\Debug\BasicWebServer.pdb
