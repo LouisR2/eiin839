@@ -1,0 +1,195 @@
+{
+	"info": {
+		"_postman_id": "a08ca96f-9e2f-44cd-8eb5-2036d96aaad6",
+		"name": "TD3-SOC",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get simple contract by name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.jcdecaux.com/vls/v1/stations?contract=Lyon&apiKey=APIKEY",
+					"protocol": "https",
+					"host": [
+						"api",
+						"jcdecaux",
+						"com"
+					],
+					"path": [
+						"vls",
+						"v1",
+						"stations"
+					],
+					"query": [
+						{
+							"key": "contract",
+							"value": "Lyon"
+						},
+						{
+							"key": "apiKey",
+							"value": "APIKEY"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all contracts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.jcdecaux.com/vls/v3/contracts?apiKey=APIKEY",
+					"protocol": "https",
+					"host": [
+						"api",
+						"jcdecaux",
+						"com"
+					],
+					"path": [
+						"vls",
+						"v3",
+						"contracts"
+					],
+					"query": [
+						{
+							"key": "apiKey",
+							"value": "APIKEY"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get contract's stations",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.jcdecaux.com/vls/v3/stations?contract=Lyon&apiKey=APIKEY",
+					"protocol": "https",
+					"host": [
+						"api",
+						"jcdecaux",
+						"com"
+					],
+					"path": [
+						"vls",
+						"v3",
+						"stations"
+					],
+					"query": [
+						{
+							"key": "contract",
+							"value": "Lyon"
+						},
+						{
+							"key": "apiKey",
+							"value": "APIKEY"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get station's news",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.jcdecaux.com/vls/v3/stations/5015?contract=Lyon&apiKey=APIKEY",
+					"protocol": "https",
+					"host": [
+						"api",
+						"jcdecaux",
+						"com"
+					],
+					"path": [
+						"vls",
+						"v3",
+						"stations",
+						"5015"
+					],
+					"query": [
+						{
+							"key": "contract",
+							"value": "Lyon"
+						},
+						{
+							"key": "apiKey",
+							"value": "APIKEY"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get contract's park list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.jcdecaux.com/parking/v1/contracts/Lyon/parks?apiKey=APIKEY",
+					"protocol": "https",
+					"host": [
+						"api",
+						"jcdecaux",
+						"com"
+					],
+					"path": [
+						"parking",
+						"v1",
+						"contracts",
+						"Lyon",
+						"parks"
+					],
+					"query": [
+						{
+							"key": "apiKey",
+							"value": "APIKEY"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get park's infos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.jcdecaux.com/parking/v1/contracts/Lyon/parks/{park_number}?apiKey=APIKEY",
+					"protocol": "https",
+					"host": [
+						"api",
+						"jcdecaux",
+						"com"
+					],
+					"path": [
+						"parking",
+						"v1",
+						"contracts",
+						"Lyon",
+						"parks",
+						"{park_number}"
+					],
+					"query": [
+						{
+							"key": "apiKey",
+							"value": "APIKEY"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
