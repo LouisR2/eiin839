@@ -13,27 +13,22 @@ namespace Question1
 
         static async Task Main(string[] args)
         {
-            if (args.Length >= 1)
+            if (args.Length >= 2)   //FIRST ARG IS STATION NUMBER, SECOND IS THE CONTRACT NAME
             {
 
                 // Call asynchronous network methods in a try/catch block to handle exceptions.
                 try
                 {
-                    string responseBody = await client.GetStringAsync("https://api.jcdecaux.com/vls/v3/stations?contract="+args[0]+"&apiKey=APIKEY");
+                    //with this URL, we give station number and contract name to get infos
+                    string responseBody = await client.GetStringAsync("https://api.jcdecaux.com/vls/v3/stations/" + args[0] + "?contract=" + args[1] + "&apiKey=APIKEY");
 
-                    //Display raw response body
-                    //Console.WriteLine(responseBody);
+                    Station s = JsonSerializer.Deserialize<Station>(responseBody);
 
-                    Station[] stations = JsonSerializer.Deserialize<Station[]>(responseBody);
+                    Console.WriteLine("STATION: " + s.name);
+                    Console.WriteLine("ADDRESS: " + s.address);
+                    Console.WriteLine("STATUS: " + s.status);
+                    Console.WriteLine("TOTAL CAPACITY: " + s.totalStands.capacity);
 
-                    foreach (Station s in stations)
-                    {
-                        Console.WriteLine("STATION: " + s.name);
-                        Console.WriteLine("ADDRESS: " + s.address);
-                        Console.WriteLine("STATUS: " + s.status);
-                        Console.WriteLine("TOTAL CAPACITY: " + s.totalStands.capacity);
-                        Console.WriteLine("==================");
-                    }
                 }
                 catch (HttpRequestException e)
                 {

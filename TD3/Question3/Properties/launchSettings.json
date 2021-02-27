@@ -1,7 +1,12 @@
 {
   "profiles": {
+    "Question3": {
+      "commandName": "Executable",
+      "executablePath": "C:\\Users\\louis\\Desktop\\Cours\\S8\\SOC\\eiin839\\TD3\\Question3\\bin\\Debug\\netcoreapp3.1\\Question3.exe",
+      "commandLineArgs": "5015 Lyon"
+    },
     "Question2": {
-      "commandName": "Project",
+      "commandName": "Executable",
       "commandLineArgs": "Lyon"
     }
   }
